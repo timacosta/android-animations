@@ -12,11 +12,11 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        val bining = ActivityMainBinding.inflate(layoutInflater).also {
+        val binding = ActivityMainBinding.inflate(layoutInflater).also {
             setContentView(it.root)
         }
 
-        val playStopAnimationButton = bining.playStopButton.apply {
+        val playStopAnimationButton = binding.playStopButton.apply {
             setImageDrawable(getDrawable(R.drawable.play_stop));
             animator = drawable as AnimationDrawable
         }
